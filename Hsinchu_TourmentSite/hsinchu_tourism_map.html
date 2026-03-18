@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02b72eb5992c80166ae628cd5a83322c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_02b72eb5992c80166ae628cd5a83322c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_02b72eb5992c80166ae628cd5a83322c = L.map(
+                "map_02b72eb5992c80166ae628cd5a83322c",
+                {
+                    center: [24.8047, 120.9714],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8320ca61a7076646aa253da0536c01f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a8320ca61a7076646aa253da0536c01f.addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var circle_marker_fecf4a9b4a09dd93766fe7ea9b69d8d3 = L.circleMarker(
+                [24.8005568, 120.9781933],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.12435750215976, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_f9e6f4b2751f3f15a92a04323e899a33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2715926eb55fe43bf51727b3f78fa45e = $(`<div id="html_2715926eb55fe43bf51727b3f78fa45e" style="width: 100.0%; height: 100.0%;"><b>新竹公園</b><br>名次：1<br>人次：3,861,124</div>`)[0];
+                popup_f9e6f4b2751f3f15a92a04323e899a33.setContent(html_2715926eb55fe43bf51727b3f78fa45e);
+            
+        
+
+        circle_marker_fecf4a9b4a09dd93766fe7ea9b69d8d3.bindPopup(popup_f9e6f4b2751f3f15a92a04323e899a33)
+        ;
+
+        
+    
+    
+            var marker_70d9b7723289cc18c005911db1380049 = L.marker(
+                [24.8005568, 120.9781933],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_e4531c6275cbcaa9e45d6b0d2474f3f3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #FFD700;\"\u003e1\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_70d9b7723289cc18c005911db1380049.setIcon(div_icon_e4531c6275cbcaa9e45d6b0d2474f3f3);
+            
+    
+            var circle_marker_e748906eaa2bee5662656ebc142c1324 = L.circleMarker(
+                [24.8476618, 120.9219747],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.555941607154516, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_989dcf75c6113476598dd48436704e07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccc6a69375626404ada077eefe107024 = $(`<div id="html_ccc6a69375626404ada077eefe107024" style="width: 100.0%; height: 100.0%;"><b>新竹漁港</b><br>名次：2<br>人次：2,256,718</div>`)[0];
+                popup_989dcf75c6113476598dd48436704e07.setContent(html_ccc6a69375626404ada077eefe107024);
+            
+        
+
+        circle_marker_e748906eaa2bee5662656ebc142c1324.bindPopup(popup_989dcf75c6113476598dd48436704e07)
+        ;
+
+        
+    
+    
+            var marker_4ea45e19c7031a80dd2e27bad5937a16 = L.marker(
+                [24.8476618, 120.9219747],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_40c3f17dc64d8cb7fb343842008e9797 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #FFD700;\"\u003e2\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_4ea45e19c7031a80dd2e27bad5937a16.setIcon(div_icon_40c3f17dc64d8cb7fb343842008e9797);
+            
+    
+            var circle_marker_e4cbc809c252f2d0447b424152c6e557 = L.circleMarker(
+                [24.7053351, 121.1825384],
+                {"bubblingMouseEvents": true, "color": "#FFD700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFD700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.581422545540914, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_f6633e2338fe711bd939fd1f5a1e8218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1831470eb49205ffb59ee7c6aba6bc37 = $(`<div id="html_1831470eb49205ffb59ee7c6aba6bc37" style="width: 100.0%; height: 100.0%;"><b>內灣車站</b><br>名次：3<br>人次：1,595,818</div>`)[0];
+                popup_f6633e2338fe711bd939fd1f5a1e8218.setContent(html_1831470eb49205ffb59ee7c6aba6bc37);
+            
+        
+
+        circle_marker_e4cbc809c252f2d0447b424152c6e557.bindPopup(popup_f6633e2338fe711bd939fd1f5a1e8218)
+        ;
+
+        
+    
+    
+            var marker_eb723aae2c9d82e2376b1b94ddfad88a = L.marker(
+                [24.7053351, 121.1825384],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_9aee382b453c04c28f0b525fa440177a = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #FFD700;\"\u003e3\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_eb723aae2c9d82e2376b1b94ddfad88a.setIcon(div_icon_9aee382b453c04c28f0b525fa440177a);
+            
+    
+            var circle_marker_3d3ab701d11960a07bd92784bd579bd3 = L.circleMarker(
+                [24.6550436, 121.024424],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.003571200830798, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_3d95a2b4fb25e50a6305cb32f01730d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b72e302d3b4bb5449894b7c69a844c28 = $(`<div id="html_b72e302d3b4bb5449894b7c69a844c28" style="width: 100.0%; height: 100.0%;"><b>獅山遊客中心</b><br>名次：4<br>人次：1,254,720</div>`)[0];
+                popup_3d95a2b4fb25e50a6305cb32f01730d5.setContent(html_b72e302d3b4bb5449894b7c69a844c28);
+            
+        
+
+        circle_marker_3d3ab701d11960a07bd92784bd579bd3.bindPopup(popup_3d95a2b4fb25e50a6305cb32f01730d5)
+        ;
+
+        
+    
+    
+            var marker_3184171c344281bdea98d042323fca12 = L.marker(
+                [24.6550436, 121.024424],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_f3b0f4cf9e48222e389ae81f129d998b = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e4\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_3184171c344281bdea98d042323fca12.setIcon(div_icon_f3b0f4cf9e48222e389ae81f129d998b);
+            
+    
+            var circle_marker_c05f544e424d6007093376cca363a5ea = L.circleMarker(
+                [24.8202251, 121.1816059],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.892638915336534, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_66a01e3a7493ae8e90bbe6ca426ff191 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c12f6606a77da7999f3a13455eead49e = $(`<div id="html_c12f6606a77da7999f3a13455eead49e" style="width: 100.0%; height: 100.0%;"><b>六福村主題遊樂園</b><br>名次：5<br>人次：1,072,686</div>`)[0];
+                popup_66a01e3a7493ae8e90bbe6ca426ff191.setContent(html_c12f6606a77da7999f3a13455eead49e);
+            
+        
+
+        circle_marker_c05f544e424d6007093376cca363a5ea.bindPopup(popup_66a01e3a7493ae8e90bbe6ca426ff191)
+        ;
+
+        
+    
+    
+            var marker_e8d5a815ae6c7bc2b39a67ef7c6d5901 = L.marker(
+                [24.8202251, 121.1816059],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_96a4f164972d11b30ce6ab7d5a0a5a4f = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e5\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_e8d5a815ae6c7bc2b39a67ef7c6d5901.setIcon(div_icon_96a4f164972d11b30ce6ab7d5a0a5a4f);
+            
+    
+            var circle_marker_91d9dbd0e051c9a0cb54457be4780749 = L.circleMarker(
+                [24.7006817, 121.0556779],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.511183671948608, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_08891c6773dfc7343bcba2b8867b0049 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d5dfe7d5b9b083aa173c677f03465c = $(`<div id="html_f3d5dfe7d5b9b083aa173c677f03465c" style="width: 100.0%; height: 100.0%;"><b>北埔老街</b><br>名次：6<br>人次：961,277</div>`)[0];
+                popup_08891c6773dfc7343bcba2b8867b0049.setContent(html_f3d5dfe7d5b9b083aa173c677f03465c);
+            
+        
+
+        circle_marker_91d9dbd0e051c9a0cb54457be4780749.bindPopup(popup_08891c6773dfc7343bcba2b8867b0049)
+        ;
+
+        
+    
+    
+            var marker_7274da4d43d442ba41f6e7ca37dec8b9 = L.marker(
+                [24.7006817, 121.0556779],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_8420e45ab6873c641de33e36725e874b = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e6\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_7274da4d43d442ba41f6e7ca37dec8b9.setIcon(div_icon_8420e45ab6873c641de33e36725e874b);
+            
+    
+            var circle_marker_eccebc8622b8d0fa6d46bc4c4da1d093 = L.circleMarker(
+                [24.8702897, 120.9786574],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.636743972304195, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_df9b72b6312425bceeb157aca283157d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a36aebd5478ff256b9be0b9ffc236fd = $(`<div id="html_4a36aebd5478ff256b9be0b9ffc236fd" style="width: 100.0%; height: 100.0%;"><b>小叮噹科學主題樂園</b><br>名次：7<br>人次：442,850</div>`)[0];
+                popup_df9b72b6312425bceeb157aca283157d.setContent(html_4a36aebd5478ff256b9be0b9ffc236fd);
+            
+        
+
+        circle_marker_eccebc8622b8d0fa6d46bc4c4da1d093.bindPopup(popup_df9b72b6312425bceeb157aca283157d)
+        ;
+
+        
+    
+    
+            var marker_50e507dcdd3320365afb805ac7ea6b67 = L.marker(
+                [24.8702897, 120.9786574],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_aa72594af83e11b33f4c23a723e4738f = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e7\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_50e507dcdd3320365afb805ac7ea6b67.setIcon(div_icon_aa72594af83e11b33f4c23a723e4738f);
+            
+    
+            var circle_marker_615c7c06a187411b52e58bda846ad6e3 = L.circleMarker(
+                [24.7127649, 121.0704451],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.396288584215032, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_6ba189c36601661982be985d268d61e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27573618dc54574e191693d95bb8e116 = $(`<div id="html_27573618dc54574e191693d95bb8e116" style="width: 100.0%; height: 100.0%;"><b>綠世界生態農場</b><br>名次：8<br>人次：331,605</div>`)[0];
+                popup_6ba189c36601661982be985d268d61e9.setContent(html_27573618dc54574e191693d95bb8e116);
+            
+        
+
+        circle_marker_615c7c06a187411b52e58bda846ad6e3.bindPopup(popup_6ba189c36601661982be985d268d61e9)
+        ;
+
+        
+    
+    
+            var marker_5d561e4a514be283a4f23ae7db3eb2b2 = L.marker(
+                [24.7127649, 121.0704451],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_f95c8c158c56a3f3e1c277b2ea34be12 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e8\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_5d561e4a514be283a4f23ae7db3eb2b2.setIcon(div_icon_f95c8c158c56a3f3e1c277b2ea34be12);
+            
+    
+            var circle_marker_d4fdba9b5a75ade9499c8a73d4bfdb70 = L.circleMarker(
+                [24.7026714, 121.1328048],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_f980901cb2a4af15ee5bf48d2b33351b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22f654c5a536143b6bb229aac367de30 = $(`<div id="html_22f654c5a536143b6bb229aac367de30" style="width: 100.0%; height: 100.0%;"><b>萬瑞森林樂園</b><br>名次：9<br>人次：49,032</div>`)[0];
+                popup_f980901cb2a4af15ee5bf48d2b33351b.setContent(html_22f654c5a536143b6bb229aac367de30);
+            
+        
+
+        circle_marker_d4fdba9b5a75ade9499c8a73d4bfdb70.bindPopup(popup_f980901cb2a4af15ee5bf48d2b33351b)
+        ;
+
+        
+    
+    
+            var marker_f43dcfc07ef21689b43b35ff31bcb501 = L.marker(
+                [24.7026714, 121.1328048],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_faede4dc6d9b8d5a7cb68aad51b4d9ce = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e9\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_f43dcfc07ef21689b43b35ff31bcb501.setIcon(div_icon_faede4dc6d9b8d5a7cb68aad51b4d9ce);
+            
+    
+            var circle_marker_a81c5f26ca8dc65542f73d83099ded20 = L.circleMarker(
+                [24.8043564, 120.9660651],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+        var popup_2fbc5598e51a4e4eea796a4c985467cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eb46362ed78791b4ed8194a97c5750c = $(`<div id="html_2eb46362ed78791b4ed8194a97c5750c" style="width: 100.0%; height: 100.0%;"><b>新竹城隍廟</b><br>名次：10<br>人次：0</div>`)[0];
+                popup_2fbc5598e51a4e4eea796a4c985467cb.setContent(html_2eb46362ed78791b4ed8194a97c5750c);
+            
+        
+
+        circle_marker_a81c5f26ca8dc65542f73d83099ded20.bindPopup(popup_2fbc5598e51a4e4eea796a4c985467cb)
+        ;
+
+        
+    
+    
+            var marker_4cda54c35f50174d01bcf815d944b8d9 = L.marker(
+                [24.8043564, 120.9660651],
+                {
+}
+            ).addTo(map_02b72eb5992c80166ae628cd5a83322c);
+        
+    
+            var div_icon_338bb669d78148f04508458a27bb7ab5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: white; background: black; \n                          border-radius: 50%; width: 22px; height: 22px; display: flex; \n                          align-items: center; justify-content: center; font-size: 9pt; \n                          font-weight: bold; border: 2px solid #3186cc;\"\u003e10\u003c/div\u003e",
+  "iconAnchor": [11, 11],
+  "className": "empty",
+});
+        
+    
+                marker_4cda54c35f50174d01bcf815d944b8d9.setIcon(div_icon_338bb669d78148f04508458a27bb7ab5);
+            
+</script>
+</html>
